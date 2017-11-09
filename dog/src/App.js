@@ -5,13 +5,13 @@ import './App.css';
 
 class App extends Component {
 
-state = {
+  state = {
     dogs: [
       {
         id: 1,
-      name: "Fido",
-      age: 3,
-      species: "Dashund"
+        name: "Fido",
+        age: 3,
+        species: "Dashund"
       },
       {
         id: 2,
@@ -21,7 +21,7 @@ state = {
       }
     ],
     showDogs: false
-}
+  }
 
 
 
@@ -37,17 +37,47 @@ state = {
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
         <p>
-          <Test/>
+          <DogTable />
         </p>
       </div>
     );
+
+
+    /*}
+    deleteDogHander = (dogIndex) => {
+      const dogs = [...this.state.dogs];
+      dogs.splice(dogIndex,1);
+      this.setState({dogs: dogs});
+    }
+
+    let dogs = null;
+    if (this.state.showDogs) {
+      dogs = (
+        <div>{
+          this
+            .state
+            .dogs
+            .map((dog, index) => {
+              return <Dog
+                click={() => this.deleteDogHander(index)}
+                name={dog.name}
+                age={dog.age}
+                key={dog.id}
+                species={dog.species}
+                changed={(event) => this.nameChangedHandler(event, dog.id)} />
+            })}
+        </div>
+      );
+    }
+  } {*/
   }
 }
 
-class Test extends Component {
+class DogTable extends Component {
   render() {
     return (
-      <div>hello</div>
+      <table><tr></tr>
+        </table>
     );
   }
 }
