@@ -5,6 +5,27 @@ import './App.css';
 
 class App extends Component {
 
+state = {
+    dogs: [
+      {
+        id: 1,
+      name: "Fido",
+      age: 3,
+      species: "Dashund"
+      },
+      {
+        id: 2,
+        name: "Splodge",
+        age: 10,
+        species: "St. Bernards"
+      }
+    ],
+    showDogs: false
+}
+
+
+
+
   render() {
     return (
       <div className="App">
