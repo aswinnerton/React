@@ -50,7 +50,7 @@ class DogTable extends Component {
 
   render() {
     return (
-      <table>
+      <table className="App-table">
         <tbody>
           <tr>
             <th>Name</th>
