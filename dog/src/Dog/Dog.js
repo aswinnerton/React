@@ -1,4 +1,5 @@
 import React from 'react';
+import close from '../close.svg';
 
 
 
@@ -14,6 +15,9 @@ const Dog = (props) => {
             <td>
                 {props.breed}
             </td>
+            <td>
+            <img src={close} className="App-close" alt="close" />
+                </td>
         </tr>
     )
 };

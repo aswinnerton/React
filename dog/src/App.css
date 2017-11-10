@@ -3,8 +3,13 @@
 }
 
 .App-table{
+  border-collapse: collapse;
+}
+
+.App-table, th, td{
   margin-left:auto;
   margin-right:auto;
+  border: 1px solid black;
 }
 
 .App-logo {
@@ -12,8 +17,11 @@
   height: 80px;
 }
 
+.App-close {
+  height: 10px;
+}
 .App-header {
-  background-color: #222;
+  background-color: rgb(255, 130, 28);
   height: 150px;
   padding: 20px;
   color: white;
