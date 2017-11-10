@@ -46,7 +46,7 @@ class App extends Component {
           <h1 className="App-title">Dogs</h1>
         </header>
         <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
+          Doggo Database.
         </p>
         {/* this below is passing this.state.dogs as a prop called dogs to DogTable*/}
         <ChildForm updateData={this.handleSubmitInParent} />
@@ -88,7 +88,7 @@ class ChildForm extends Component {
         <h3>Enter a Name</h3>
         <input type="text" name="name" placeholder="Name" onChange={this.handleChange("name")} /><br /><br />
         <h3>Enter an age</h3>
-        <input type="text" name="age" placeholder="Age"  onChange={this.handleChange("age")}/><br /><br />
+        <input type="number" name="age" placeholder="Age"  onChange={this.handleChange("age")}/><br /><br />
         <h3>Enter a breed</h3>
         <input type="text" name="breed" placeholder="Breed" onChange={this.handleChange("breed")}/>
         <button onClick={this.handleSubmit}>
@@ -100,7 +100,7 @@ class ChildForm extends Component {
 }
 
 
-//a class to render a table of d
+//a class to render a table of dags
 class DogTable extends Component {
   render() {
     return (
